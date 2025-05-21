@@ -7,6 +7,7 @@ interface PlayerData {
   name: string;
   x: number;
   y: number;
+  // no
   // Potentially animation state, etc. later
 }
 
