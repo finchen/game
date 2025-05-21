@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Phaser Game</title>
+    <style>
+      #nameInputOverlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border: 1px solid #ccc;
+        z-index: 100;
+      }
+      body {
+        margin: 0; /* Remove default body margin */
+        overflow: hidden; /* Hide scrollbars if canvas is larger than window */
+      }
+      canvas {
+        display: block; /* Remove extra space below canvas */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="nameInputOverlay">
+      <h2>Enter Your Name</h2>
+      <input type="text" id="playerNameInput" placeholder="Player Name" />
+      <button id="submitNameButton">Start Game</button>
+      <hr>
+      <div>
+        <p>My Peer ID: <span id="myPeerIdDisplay">Waiting...</span> <button id="copyPeerIdButton">Copy ID</button></p>
+        <input type="text" id="remotePeerIdInput" placeholder="Remote Peer ID" />
+        <button id="connectButton">Connect</button>
+      </div>
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
